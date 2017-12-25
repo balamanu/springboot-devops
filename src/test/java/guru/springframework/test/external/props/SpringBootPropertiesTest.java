@@ -16,19 +16,19 @@ import static org.junit.Assert.assertEquals;
  * Created by jt on 5/7/16.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-//@SpringApplicationConfiguration(SpringCoreDevOpsApplication.class)
-//@WebIntegrationTest
-//@TestPropertySource("/application.properties")
+@SpringApplicationConfiguration(SpringCoreDevOpsApplication.class)
+@WebIntegrationTest
+@TestPropertySource("/application.properties")
 public class SpringBootPropertiesTest {
     @Autowired
     FakeJmsBroker fakeJmsBroker;
 
     @Test
     public void testPropsSet() throws Exception {
-//        assertEquals("10.10.10.123", fakeJmsBroker.getUrl());
-//        assertEquals(3330, fakeJmsBroker.getPort().intValue());
-//        assertEquals("Ron", fakeJmsBroker.getUser());
-//        assertEquals("Burgundy", fakeJmsBroker.getPassword());
+        //assertEquals("10.10.10.123", fakeJmsBroker.getUrl());
+       // assertEquals(3330, fakeJmsBroker.getPort().intValue());
+        assertEquals("Ron", fakeJmsBroker.getUser());
+        assertEquals("Burgundy", fakeJmsBroker.getPassword());
     }
 
 }

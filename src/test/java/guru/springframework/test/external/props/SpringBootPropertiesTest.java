@@ -16,9 +16,9 @@ import static org.junit.Assert.assertEquals;
  * Created by jt on 5/7/16.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(SpringCoreDevOpsApplication.class)
-@WebIntegrationTest
-@TestPropertySource("/application.properties")
+//@SpringApplicationConfiguration(SpringCoreDevOpsApplication.class)
+//@WebIntegrationTest
+//@TestPropertySource("/application.properties")
 public class SpringBootPropertiesTest {
     @Autowired
     FakeJmsBroker fakeJmsBroker;
